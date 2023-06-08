@@ -24,7 +24,7 @@ contract NullHYD is ERC20{
         totalsupply+= _value;
     }
 
-    function burn(address _address, uint _value)external onlyAdmin{
+    function burn(address _address, uint _value)external{
         _burn(_address, _value);
     }
 
